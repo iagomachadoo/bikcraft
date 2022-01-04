@@ -1,0 +1,25 @@
+:root{
+    --font-destaque: 'Poppins', sans-serif;
+    --font-padrao: 'Roboto', sans-serif;
+    --font-italic: 'Merriweather', serif;
+}
+
+.texto-grande-destaque{
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: var(--font-destaque);
+}
+
+.texto-medio-padrao{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: var(--font-padrao);
+}
+
+.texto-pequeno-destaque{
+    font-size: 1.125rem;
+    line-height: 1.8;
+    font-weight: 500;
+    font-family: var(--font-destaque);
+}

@@ -1,0 +1,75 @@
+.introducao-bg{
+    background-color: var(--preto);
+    color: var(--braco);
+    box-shadow: inset 0 -120px var(--braco);/*essa sobra está criando a ilusão de que a img está vazando. Inset é um sobra interna.*/
+}
+
+.introducao-container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 0 40px;
+}
+
+.introducao-conteudo{
+    align-self: end;/*alinha o ítem em específico*/
+    padding-bottom: 200px;/*80 + 120. Essa soma está compensando a sobra criada.*/
+}
+
+.introducao-conteudo h1{
+    margin-bottom: 32px;
+}
+
+.introducao-conteudo h1 > span{
+    font-family: inherit;
+}
+
+.introducao-conteudo p{
+    margin-bottom: 20px;
+}
+
+.introducao-container img{
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   margin: auto;
+}
+
+@media(max-width: 1200px){
+    .introducao-conteudo h1{
+        font-size: 3rem;
+    }
+
+    .introducao-conteudo p{
+        font-size: 1.125rem;
+    }
+}
+
+@media(max-width: 800px){
+    .introducao-container{
+        grid-template-columns: 1fr;
+        background-color: var(--cor11);
+        padding-top: 32px;
+    }
+
+    .introducao-conteudo{
+        padding-bottom: 32px;
+    }
+
+    .introducao-conteudo h1{
+        font-size: 2.25rem;
+        margin-bottom: 16px;
+    }
+
+    .introducao-conteudo a{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .introducao-container img{
+        height: 300px;
+        width: 100%;
+    }
+}
