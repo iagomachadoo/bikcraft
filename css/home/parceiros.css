@@ -1,0 +1,51 @@
+.parceiros{
+    padding: 60px 20px 120px;
+}
+
+.parceiros h2{
+    margin-bottom: 60px;
+}
+
+.parceiros-lista{
+    max-width: 1360px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.parceiros-lista li{
+    display: flex;
+    padding: 32px;
+    border-left: 2px solid var(--cor2);
+}
+
+.parceiros-lista li:first-child,
+.parceiros-lista li:nth-child(5){
+    border-left: none;
+}
+
+.parceiros-lista li:nth-child(n + 5){/*n a partir do 5. Nesse caso, o border-top será aplicado nos itens a partir do quinto item*/
+    border-top: 2px solid var(--cor2);
+}
+
+.parceiros-lista img{
+    margin: auto;
+}
+
+@media(max-width: 800px){
+    .parceiros h2{
+        margin-bottom: 32px;
+    }
+
+    .parceiros-lista{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .parceiros-lista li:nth-child(odd){
+        border-left: none;
+    }
+
+    .parceiros-lista li:nth-child(n + 3){
+        border-top: 2px solid var(--cor2);
+    }
+}
