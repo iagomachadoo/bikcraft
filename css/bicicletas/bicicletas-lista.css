@@ -1,0 +1,72 @@
+.bicicletas{
+    padding: 120px 20px;
+}
+
+.bicicletas h2{
+    margin:0 auto 32px auto;
+    max-width: 1200px;/*continer*/
+}
+
+.bicicletas-lista{
+    display: flex;
+    gap: 60px;
+    max-width: 1360px;/*novo continer estourando o de 1200*/
+    margin: auto;
+    padding-bottom: 20px;
+    overflow-x: auto;/*especifica quando um elemento block deve ser cortado, exibindo um scroll sem quebrar o layout. Com o valor auto, o scroll só vai ser criado onde for necessário.Colocando o eixo, o scroll vai ser criado apenas nesse eixo*/
+}
+
+.bicicletas-lista li{
+    min-width: 280px;
+}
+
+.bicicletas-lista a{
+    display: block;/*sempre lembrar de usar o display block em elementos a*/
+}
+
+.bicicletas-lista img{
+    margin-bottom: 12px;
+}
+
+.bicicletas-lista h3{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;/*display-flex e align-items-center para alinhar ao centro o elemento e seu pseudo-elemento*/
+    transition: .2s;
+}
+
+.bicicletas-lista h3::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../../img/decorador/dec-geral.svg");
+    margin-right: 8px;
+}
+
+.bicicletas-lista a:hover h3{
+   color: var(--primaria4);
+}
+
+.bicicletas-lista li span{
+    padding-left: 20px;/*width do pseudo-elemento + o margin-rigt para alinhar o preço ao nome da bik*/
+}
+
+@media(max-width: 800px){
+    .bicicletas{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .bicicletas h2{
+        margin-bottom: 20px;
+    }
+
+    .bicicletas-lista{
+        gap: 20px;
+    }
+
+    .bicicletas-lista h3{
+        margin-bottom: 4px;
+    }
+}

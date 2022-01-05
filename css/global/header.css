@@ -2,15 +2,13 @@
     background-color: var(--preto);
 }
 
-.header-container{
+.header{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between;
     align-items: center;/*alinha os itens ao centro horizontalmente*/
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .lista-menu{
