@@ -20,8 +20,8 @@
 .lista-menu a{
     padding: 16px 0;
     display: inline-block;
-    color: var(--braco);
     position: relative;
+    color: inherit;
 }
 
 .lista-menu a::after{
@@ -58,6 +58,11 @@
 }
 
 @media(max-width: 600px){
+    .header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .lista-menu{
         gap: 12px;
     }

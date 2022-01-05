@@ -1,6 +1,6 @@
 :root{
     --preto: #000000;
-    --braco:#ffffff;
+    --branco:#ffffff;
 
     /*cinza*/
     --cor11:#121212;
@@ -25,6 +25,10 @@
     /*gradiente*/
     --gradiente2: #F2A60C;
     --gradiente1: #FFBF00;
+}
+
+.cor-12{
+    color: var(--preto); 
 }
 
 .cor-11{
@@ -57,7 +61,6 @@
 
 .cor-4{
     color: var(--cor4);  
-  
 }
 
 .cor-3{
@@ -70,6 +73,10 @@
 
 .cor-1{
     color: var(--cor1);  
+}
+
+.cor-0{
+    color: var(--branco);  
 }
 
 .primaria-5{

@@ -1,0 +1,83 @@
+.tecnologia-bg{
+    background-color: var(--preto);
+    box-shadow: inset 0 40px var(--branco), inset 0 -40px var(--branco);/*sombra superior e inferior dando a impressão de que a img está vazando do container*/
+}
+
+.tecnologia{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 40px;
+}
+
+.tecnologia > div > span{
+    padding-top: 120px;
+    margin-bottom: 32px;
+    display: block;
+}
+
+.tecnologia h2{
+    margin-bottom: 32px;
+}
+
+.tecnologia > div > p{
+    margin-bottom: 24px;
+}
+
+.tecnologia a{
+    margin-bottom: 80px;
+}
+
+.tecnologia > div > div{
+    display: flex;
+    gap: 40px;
+    padding-bottom: 120px;
+}
+
+.tecnologia > div > div > div img{
+    margin-bottom: 8px;
+    width: 24px;
+}
+
+.tecnologia div h3{
+    margin-bottom: 8px;
+    width: max-content;/*o elemento nunca vai quebrar a linha, sempre vai ocupar o tamanho máximo do conteúdo*/
+}
+
+.tecnologia-img img{
+    height: 100%;
+    object-fit: cover;
+    object-position: left;/*a img sempre estará alinhada a esquerda*/
+}
+
+@media(max-width: 800px){
+    .tecnologia-bg{
+        box-shadow: initial;
+    }
+
+    .tecnologia{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .tecnologia > div > span{
+        padding-top: 60px;
+    }
+
+    .tecnologia a{
+        margin-bottom: 40px;
+    }
+
+    .tecnologia > div > div{
+        padding-bottom: 60px;
+        flex-direction: column;
+    }
+
+    .tecnologia > div > div > div img,
+    .tecnologia div h3{
+        margin-bottom: 4px;
+    }
+
+    .tecnologia-img img{
+        display: none;
+    }
+}
