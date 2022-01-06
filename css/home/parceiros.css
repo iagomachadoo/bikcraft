@@ -33,6 +33,10 @@
 }
 
 @media(max-width: 800px){
+    .parceiros{
+        padding-bottom: 60px;
+    }
+
     .parceiros h2{
         margin-bottom: 32px;
     }
