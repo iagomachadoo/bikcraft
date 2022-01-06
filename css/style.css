@@ -21,3 +21,6 @@
 
 /*home*/
 @import "home/depoimento.css";
+
+/*seguros*/
+@import "seguros/seguros.css";
