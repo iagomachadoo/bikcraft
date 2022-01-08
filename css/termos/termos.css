@@ -1,0 +1,18 @@
+.termos-conteudo{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.termos-conteudo h2{
+    margin-bottom: 12px;
+}
+
+.termos-conteudo p+h2{/*todo h2 que veha após um p*/
+    margin-top: 48px;
+}
+
+.termos-conteudo p{
+    margin-bottom: 24px;
+    max-width: 75ch;
+}
+
