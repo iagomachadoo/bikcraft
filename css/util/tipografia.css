@@ -36,6 +36,10 @@
     font: 500 1.125rem/1.8 var(--font-destaque);
 }
 
+.font-1-p-d{
+    font: 500 1.125rem/1.35 var(--font-destaque);
+}
+
 .font-1-xp{
     font: 600 .875rem/1.45 var(--font-destaque);
 }

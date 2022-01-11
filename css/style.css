@@ -13,6 +13,7 @@
 
 /*bicicletas*/
 @import "bicicletas/bicicletas-lista.css";
+@import "bicicletas/bicicletas.css";
 
 /*home*/
 @import "home/tecnologia.css";

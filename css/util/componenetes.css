@@ -32,6 +32,25 @@
     color: var(--cor2);
 }
 
+.botao.seta{
+    display: flex;
+    align-items: center;
+}
+
+.botao.seta::after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background: url("../../img/icones/seta-btn.svg");
+    margin-left: 12px;
+    transition: transform .2s;/*mudando o tempo de transição do transform*/
+}
+
+.botao.seta:hover:after{
+    transform: translateX(4px);/*com o transform podemos tranformar(dar movimento) diversas partes de uma div*/
+}
+
 .link{
     display: inline-block;
     color: var(--primaria1);
