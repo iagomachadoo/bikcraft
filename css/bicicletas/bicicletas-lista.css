@@ -1,8 +1,8 @@
-.bicicletas{
+.bicicletas-home{
     padding: 120px 20px;
 }
 
-.bicicletas h2{
+.bicicletas-home h2{
     margin:0 auto 32px auto;
     max-width: 1200px;/*continer*/
 }
@@ -53,12 +53,12 @@
 }
 
 @media(max-width: 800px){
-    .bicicletas{
+    .bicicletas-home{
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
-    .bicicletas h2{
+    .bicicletas-home h2{
         margin-bottom: 20px;
     }
 

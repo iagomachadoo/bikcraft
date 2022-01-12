@@ -1,0 +1,31 @@
+.vantagens-bg{
+    background: var(--preto);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.vantagens h2{
+    margin-bottom: 32px;
+}
+
+.vantagens-lista{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));/*auto-fit coloca a quantidade de colunas que couberem no grid. O minmax define o tamanho mínimo que a coluna pode ter e o max-content é o máximo de tamanho de ela pode ter, sendo o máximo do tamanho do conteúdo*/
+    gap: 32px 40px;
+}
+
+.vantagens-lista img,
+.vantagens-lista h3{
+    margin-bottom: 8px;
+}
+
+@media(max-width: 800px){
+    .vantagens-bg{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .vantagens h2{
+        margin-bottom: 20px;
+    }
+}

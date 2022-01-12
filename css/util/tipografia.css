@@ -32,6 +32,10 @@
     font: 600 1.5rem/1.5 var(--font-destaque);
 }
 
+.font-1-p-b{
+    font: 600 1.125rem/1.35 var(--font-destaque);
+}
+
 .font-1-p-c{
     font: 500 1.125rem/1.8 var(--font-destaque);
 }
