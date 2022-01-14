@@ -11,7 +11,7 @@
 .font-1-gg{
     font: 600 2.25rem/1.35 var(--font-destaque);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: .15em;/*1.5%*/
 }
 
 .font-1-g{
@@ -21,7 +21,7 @@
 .font-1-m{
     font: 600 1.5rem/1.5 var(--font-destaque);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: .15em;
 }
 
 .font-1-m-b{
@@ -48,6 +48,21 @@
     font: 600 .875rem/1.45 var(--font-destaque);
 }
 
+.font-1-xxp-b{
+    font: 500 .75rem/.75 var(--font-destaque);
+}
+
+.font-1-xxp-c{
+    font: .75rem/.75 var(--font-destaque);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.font-2-gg{
+    font: 2.25rem/.75 var(--font-padrao);
+    letter-spacing: .15em;
+}
+
 .font-2-g{
     font: 1.5rem/1.5 var(--font-padrao);
 }
@@ -55,7 +70,7 @@
 .font-2-g-c{
     font: 500 1.5rem/1.35 var(--font-padrao);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: .15em;
 }
 
 .font-2-m{
@@ -64,6 +79,14 @@
 
 .font-2-m-b{
     font: 500 1.125rem/1.35 var(--font-padrao);
+}
+
+.font-2-pp{
+    font: .875rem/1.45 var(--font-padrao);
+}
+
+.font-2-p-b{
+    font: 500 1rem/1.5 var(--font-padrao);
 }
 
 .font-3{
