@@ -1,0 +1,126 @@
+#contato{
+    background: linear-gradient(var(--cor11) 600px, var(--cor1) 0);
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.contato-dados,
+.contato-formulario{
+    padding: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados{
+    background: var(--preto);
+    border-radius: 5px 0 0 5px;
+}
+
+.contato-formulario{
+    background: var(--branco);
+    border-radius: 0 5px 5px 0;
+}
+
+.contato-dados h2{
+    margin-bottom: 60px;
+}
+
+.contato-endereco{
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.contato-endereco::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/icones/contato/local.svg");
+    position: absolute;
+    left: -28px;
+    top: 5px;
+}
+
+.contato-endereco p{
+    margin-bottom: 8px;
+}
+
+.contato-meios{
+    position: relative;
+}
+
+.contato-meios::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/icones/contato/email.svg");
+    position: absolute;
+    left: -28px;
+    top: 5px;
+}
+
+.contato-meios a{
+    color: inherit;
+    display: block;
+    max-width: max-content;/*faz com que a caixa do link ocupe apenas o espaço do conteúdo quando o display é block*/
+    margin-bottom: 8px;
+}
+
+.contato-meios a:hover{
+    color: var(--branco);
+}
+
+.contato-meios a:nth-child(2){
+    margin-bottom: 32px;
+}
+
+.contato-meios a:last-child{
+    position: relative;
+}
+
+.contato-meios a:last-child::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/icones/contato/telefone.svg");
+    position: absolute;
+    left: -28px;
+    top: 5px;
+}
+
+.contato-redes{
+    margin-top: 60px;
+    display: flex;
+    gap: 32px;
+}
+
+@media(max-width: 800px){
+    .contato{
+        grid-template-columns: 1fr;
+    }
+
+    .contato-dados,
+    .contato-formulario{
+    padding: 40px;
+    }
+
+    .contato-dados{
+        border-radius: 5px 5px 0 0;
+    }
+
+    .contato-formulario{
+        border-radius: 0 0 5px 5px;
+    }
+
+    .contato-dados h2{
+        margin-bottom: 32px;
+    }
+
+    .contato-redes{
+        margin-top: 32px;
+    }
+}
