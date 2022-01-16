@@ -85,12 +85,12 @@
     font: 500 1.125rem/1.35 var(--font-padrao);
 }
 
-.font-2-pp{
-    font: .875rem/1.45 var(--font-padrao);
-}
-
 .font-2-p-b{
     font: 500 1rem/1.5 var(--font-padrao);
+}
+
+.font-2-pp{
+    font: .875rem/1.45 var(--font-padrao);
 }
 
 .font-3{
