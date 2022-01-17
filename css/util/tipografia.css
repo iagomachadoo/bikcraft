@@ -48,8 +48,18 @@
     font: 600 1rem/1.55 var(--font-destaque);
 }
 
+.font-1-pp-c{
+    font: 500 1rem/1 var(--font-destaque);
+}
+
 .font-1-xp{
     font: 600 .875rem/1.45 var(--font-destaque);
+}
+
+.font-1-xxp{
+    font: 600 .75rem/.75 var(--font-destaque);
+    text-transform: uppercase;
+    letter-spacing: .15em;
 }
 
 .font-1-xxp-b{

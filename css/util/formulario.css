@@ -6,7 +6,7 @@
 
 .form label{
     display: block;
-    font: 500 1rem/1.5 var(--font-destaque);
+    font: 400 1rem/1.5 var(--font-destaque);
     margin-bottom: 4px;
 }
 
@@ -16,7 +16,8 @@
 
 .form input[type="text"],
 .form input[type="email"],
-.form textarea{
+.form textarea,
+.form select{
     font: 400 1rem/1.5 var(--font-padrao);
     background: var(--cor1);
     border: 1px solid var(--cor2);
@@ -27,11 +28,27 @@
 
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
-.form textarea:focus{
+.form textarea:focus,
+.form select:focus{
     outline: none;
     border-color: var(--primaria1);
     background: var(--branco);
     box-shadow: 0 0 0 2px #fea;
+}
+
+.form .termos{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.termos label{
+    text-decoration: underline;
+}
+
+.form input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
 }
 
 @media(max-width: 600px){
