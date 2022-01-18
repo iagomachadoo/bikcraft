@@ -8,6 +8,7 @@
 
 img{
     max-width: 100%;
+    height: auto;/*sempre usar o heigth auto para que as imagens cresçam proporcionalmente sem distorcer*/
     display: block;
 }
 
