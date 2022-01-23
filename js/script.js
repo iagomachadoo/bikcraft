@@ -1,4 +1,4 @@
-//mostrando qual página está ativada
+//Ativar links do menu (mostrando qual página está ativada) 
 const links = document.querySelectorAll('.lista-menu a');
 
 function ativarLink(link) {
@@ -14,3 +14,17 @@ function ativarLink(link) {
 
 //função para ativar cada um dos links
 links.forEach(ativarLink)
+
+//Itens do orçamento
+const parametrosUrl = new URLSearchParams(location.search)//classe que vai extrar os parâmetros da url
+
+function ativarProduto(parametro) {
+    const elemento = document.getElementById(parametro);//pegando os elementos pelo id
+
+    if (elemento) {
+        elemento.checked = true//selecionando o elemento que estiver no estado checked
+    }
+    
+}//função para mostrar os parâmetros da url
+
+parametrosUrl.forEach(ativarProduto)
