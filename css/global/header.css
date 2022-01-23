@@ -34,7 +34,8 @@
     transition: .3s;
 }
 
-.lista-menu a:hover:after{
+.lista-menu a:hover::after,
+.lista-menu a.ativo::after/*adicioando a classe ativo que será ativada pelo css*/{
     width: 100%;/*quando o mouse passa por cima o width muda de 0 para 100%*/
 }
 
