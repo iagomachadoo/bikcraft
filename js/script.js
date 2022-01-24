@@ -60,11 +60,12 @@ const containerGaleria = document.querySelector('.bicicleta-img');
 function trocarImagem(evento) {
     const imgAtual = evento.currentTarget
 
-    const tamanhoDaTela = matchMedia('(min-width: 1000px)').matches
+    const tamanhoDaTela = matchMedia('(min-width: 1000px)').matches//definindo um tamanho mínimo de tela
 
     if (tamanhoDaTela) {
-        containerGaleria.prepend(imgAtual)
-    }
+        containerGaleria.prepend(imgAtual)//o método .prepend insere um novo elemento antes do primeiro filho do elemento pai. Nesse caso, a imagem clicada será adicionada como o primeiro filho da div bicicleta-img
+
+    }//se a tela estiver acima do tamanho mínimo a troca de imagens deve acontecer
 }   
 
 function eventoGaleria(img) {
@@ -72,3 +73,8 @@ function eventoGaleria(img) {
 }
 
 galeria.forEach(eventoGaleria)
+
+//Animação (plugin)
+if (window.SimpleAnime) {
+    new SimpleAnime();
+}

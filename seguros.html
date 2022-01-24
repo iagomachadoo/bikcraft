@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Termos e Condições">
     <title>Seguros | Bikcraft</title>
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <link rel="preload" href="css/style.css" as="style"><!--fazer o css carregar primeiro-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="css/style.min.css" as="style"><!--fazer o css carregar primeiro-->
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 <body id="seguros"><!--esse id serve para caso seja necessária fazer uma mudança apenas nessa página-->
     <header class="header-bg">
         <div class="header container">
-            <a href="index.html"><img src="img/bikcraft.svg" alt="bikcraft" class="img-logo"></a>
+            <a href="index.html"><img src="img/bikcraft.svg" alt="bikcraft" class="img-logo" width="136" height="32"></a>
 
             <nav class="menu" aria-label="primaria">
                 <ul class="lista-menu font-1-p-c cor-0">
@@ -39,7 +40,7 @@
             </div>
         </div>
 
-        <div class="seguros container">
+        <div class="seguros container fadeInLeft" data-anime="200">
             <div class="seguro-item">
                 <h3 class="font-1-gg cor-6">prata</h3>
 
@@ -55,7 +56,7 @@
                 <a href="./orcamento.html?tipo=seguro&produto=prata" class="botao secundario">inscreva-se</a>
             </div>
 
-            <div class="seguro-item">
+            <div class="seguro-item fadeInRight" data-anime="400">
                 <h3 class="font-1-gg primaria-1">ouro</h3>
 
                 <span class="font-1-gg cor-0">R$ 299 <span class="font-1-xp cor-6">mensal</span></span>
@@ -81,7 +82,7 @@
 
         <ul class="vantagens-lista container">
             <li>
-                <img src="img/icones/vantagens/eletrica.svg" alt="">
+                <img src="img/icones/vantagens/eletrica.svg" alt="Ícone de uma bicicleta" width="33" height="32">
 
                 <h3 class="font-1-m-b cor-0">Reparo Elétrico</h3>
 
@@ -89,7 +90,7 @@
             </li>
 
             <li>
-                <img src="img/icones/vantagens/carbono.svg" alt="">
+                <img src="img/icones/vantagens/carbono.svg" alt="Ícone de fibra" width="33" height="32">
 
                 <h3 class="font-1-m-b cor-0">Reparo de Quadros</h3>
 
@@ -97,7 +98,7 @@
             </li>
 
             <li>
-                <img src="img/icones/vantagens/sustentavel.svg" alt="">
+                <img src="img/icones/vantagens/sustentavel.svg" alt="Ícone de uma folha de árvore" width="33" height="32">
 
                 <h3 class="font-1-m-b cor-0">Sustentável</h3>
 
@@ -105,7 +106,7 @@
             </li>
 
             <li>
-                <img src="img/icones/vantagens/rastreador.svg" alt="">
+                <img src="img/icones/vantagens/rastreador.svg" alt="Ícone de um radar" width="33" height="32">
 
                 <h3 class="font-1-m-b cor-0">Recuperação</h3>
 
@@ -113,7 +114,7 @@
             </li>
 
             <li>
-                <img src="img/icones/vantagens/seguro.svg" alt="">
+                <img src="img/icones/vantagens/seguro.svg" alt="Ícone de um cadeado" width="33" height="32">
 
                 <h3 class="font-1-m-b cor-0">Segurança</h3>
 
@@ -121,7 +122,7 @@
             </li>
 
             <li>
-                <img src="img/icones/vantagens/seguro.svg" alt="">
+                <img src="img/icones/vantagens/velocidade.svg" alt="Ícone de um velocímetro" width="33" height="32">
 
                 <h3 class="font-1-m-b cor-0">Rapidez</h3>
 
@@ -173,7 +174,7 @@
 
     <footer class="footer-bg">
         <div class="footer-conteudo container">
-            <img src="img/bikcraft.svg" alt="logo bikcraft">
+            <img src="img/bikcraft.svg" alt="logo bikcraft" width="136" height="32">
 
             <div class="footer-contato">
                 <h2 class="font-2-g-c cor-0">contatos</h2>
@@ -186,11 +187,11 @@
                 </ul>
 
                 <div class="footer-rede-social">
-                    <img src="img/icones/redes-sociais/instagram.svg" alt="">
+                    <img src="img/icones/redes-sociais/instagram.svg" alt="Ícone instagram" width="32" height="32">
     
-                    <img src="img/icones/redes-sociais/facebook.svg" alt="">
+                    <img src="img/icones/redes-sociais/facebook.svg" alt="Ícone facebook width="32" height="32">
     
-                    <img src="img/icones/redes-sociais/youtube.svg" alt="">
+                    <img src="img/icones/redes-sociais/youtube.svg" alt="Ícone youtube" width="32" height="32">
                 </div>
             </div>
             
@@ -213,6 +214,8 @@
             <p class="font-2-m-b cor-6">bikcraft © alguns direitos reservados.</p>
         </div>
     </footer>
-<script src="./js/script.js"></script>
+
+    <script src="./js/plugin/simple-anime.js"></script>;
+    <script src="./js/script.js"></script>
 </body>
 </html>
