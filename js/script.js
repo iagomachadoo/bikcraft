@@ -28,3 +28,26 @@ function ativarProduto(parametro) {
 }//função para mostrar os parâmetros da url
 
 parametrosUrl.forEach(ativarProduto)
+
+//perguntas frequentes
+const perguntas = document.querySelectorAll('.perguntas button');
+
+function ativarPergunta(evento) {
+    const pergunta = evento.currentTarget//pegando o elemento que foi clicado
+
+    const controls = pergunta.getAttribute('aria-controls')//pegando o atributo aria-contols
+
+    const resposta = document.getElementById(controls);//pegando a resposta da pergunta
+
+    resposta.classList.toggle('ativa')//adicionando a classe ativa a resposta
+    
+    const ativa = resposta.classList.contains('ativa')//verificando se o elemento contém a classe
+    
+    pergunta.setAttribute('aria-expanded', ativa)
+}
+
+function eventosPergunta(pergunta) {
+    pergunta.addEventListener('click', ativarPergunta) 
+}//adicionando um evento as perguntas
+
+perguntas.forEach(eventosPergunta)
